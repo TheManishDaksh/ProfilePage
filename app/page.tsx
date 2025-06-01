@@ -18,7 +18,7 @@ import Typescript from "@/components/icons/Typescript";
 import ProjectCard from "@/components/ProjectCard";
 import StackCard from "@/components/StackCard";
 import { motion } from "framer-motion";
-import  Image  from "next/image"
+import Image from "next/image";
 
 export default function Home() {
   const paytm = [
@@ -62,13 +62,17 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start justify-center w-full px-4 md:px-10 py-10 gap-10 bg-gradient-to-br from-slate-500 via-slate-950 to-white min-h-screen">
       <div className="hidden md:block">
-        <div>
-          <Image
-            className="w-[120px] rounded-full"
+        <motion.div
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}>
+          <Image  className="rounded-full"
             src="/profile.jpg"
             alt="profile"
+            height={100}
+            width={120}
           />
-        </div>
+        </motion.div>
         <div className="flex items-center pt-4 gap-4">
           <a
             href="https://x.com/manish_dakshh"
@@ -121,7 +125,12 @@ export default function Home() {
         </div>
 
         <div className="py-4">
-          <Image src="/github.png" alt="github Strikes" />
+          <Image 
+           src="/github.png"
+            alt="github Strikes"
+            width={560}
+            height={100}
+            />
         </div>
 
         <div className="text-start w-full">
@@ -195,7 +204,7 @@ export default function Home() {
 
           <div className="text-start py-10">
             My Strength is building core web applications which solve problems
-            and scalable. I am currently working with full Stack Development.
+            and scalable. I'm currently working with full Stack Development.
             feel free for contacting me for any work or project.
           </div>
 
