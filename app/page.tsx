@@ -185,20 +185,20 @@ export default function Home() {
           <div>
             <div className="text-2xl font-bold py-5">Stack</div>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-y-3">
-              <StackCard icon={<Nodejs />} text="JavaScript" />
-              <StackCard icon={<Typescript />} text="TypeScript" />
-              <StackCard icon={<React />} text="React" />
-              <StackCard icon={<ReduxIcon />} text="Redux" />
-              <StackCard icon={<RecoilIcon />} text="Recoil" />
-              <StackCard icon={<Nodejs />} text="NodeJs" />
-              <StackCard icon={<Next />} text="NextJs" />
-              <StackCard icon={<TailwindIcon />} text="Tailwind" />
-              <StackCard icon={<Express />} text="Express" />
-              <StackCard icon={<HonoIcon />} text="HonoJs" />
-              <StackCard icon={<Cloudflare />} text="Cloudfare" />
-              <StackCard icon={<MongoDBIcon />} text="MongoDB" />
-              <StackCard icon={<PostgresIcon />} text="Postgres" />
-              <StackCard icon={<PrismaIcon />} text="Prisma" />
+              <StackCard key={1} icon={<Nodejs />} text="JavaScript" />
+              <StackCard key={2} icon={<Typescript />} text="TypeScript" />
+              <StackCard key={3} icon={<React />} text="React" />
+              <StackCard key={4} icon={<ReduxIcon />} text="Redux" />
+              <StackCard key={5} icon={<RecoilIcon />} text="Recoil" />
+              <StackCard key={6} icon={<Nodejs />} text="NodeJs" />
+              <StackCard key={7} icon={<Next />} text="NextJs" />
+              <StackCard key={8} icon={<TailwindIcon />} text="Tailwind" />
+              <StackCard key={9} icon={<Express />} text="Express" />
+              <StackCard key={10} icon={<HonoIcon />} text="HonoJs" />
+              <StackCard key={11} icon={<Cloudflare />} text="Cloudfare" />
+              <StackCard key={12} icon={<MongoDBIcon />} text="MongoDB" />
+              <StackCard key={13} icon={<PostgresIcon />} text="Postgres" />
+              <StackCard key={14} icon={<PrismaIcon />} text="Prisma" />
             </div>
           </div>
 
