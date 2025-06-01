@@ -18,6 +18,7 @@ import Typescript from "@/components/icons/Typescript";
 import ProjectCard from "@/components/ProjectCard";
 import StackCard from "@/components/StackCard";
 import { motion } from "framer-motion";
+import  Image  from "next/image"
 
 export default function Home() {
   const paytm = [
@@ -60,10 +61,9 @@ export default function Home() {
   ];
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start justify-center w-full px-4 md:px-10 py-10 gap-10 bg-gradient-to-br from-slate-500 via-slate-950 to-white min-h-screen">
-      {/* Left Profile Section */}
       <div className="hidden md:block">
         <div>
-          <img
+          <Image
             className="w-[120px] rounded-full"
             src="/profile.jpg"
             alt="profile"
@@ -87,8 +87,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Right Main Content Section */}
-      <div className="flex flex-col items-start text-white text-left max-w-[40rem] w-full">
+      <div className="flex flex-col items-start text-white text-left max-w-[35rem] w-full">
         <motion.div
           className="text-3xl md:text-5xl font-bold text-transparent bg-gradient-to-b from-white via-white to-slate-700 bg-clip-text"
           initial={{ opacity: 0, y: -40 }}
@@ -122,32 +121,35 @@ export default function Home() {
         </div>
 
         <div className="py-4">
-          <img src="/github.png" alt="github Strikes" />
+          <Image src="/github.png" alt="github Strikes" />
         </div>
 
-        {/* Proof of Work Section */}
         <div className="text-start w-full">
           <div className="text-2xl font-bold pb-5">Proof Of Work</div>
           <div className="grid grid-cols-1 gap-7 md:grid-cols-2 md:gap-8">
             <ProjectCard
+              key={1}
               title="Initiate"
               content="A website that makes website for you based on your prompts( Anthropic AI )."
               gitLink="https://github.com/TheManishDaksh/Initiate-fe"
               icons={Initiate}
             />
             <ProjectCard
+            key={2}
               title="Vercel"
               content="A small form of vercel for understanding the basic structure and flow of vecel"
               gitLink="https://github.com/TheManishDaksh/vercel"
               icons={vercel}
             />
             <ProjectCard
+              key={3}
               title="Brainly"
               content="A Second Brain application for keeping up the daily task, reminders and goals"
               gitLink="https://github.com/TheManishDaksh/Brainly-fe"
               icons={brainly}
             />
             <ProjectCard
+            key={4}
               title="Muse"
               content="A blogging application for keeping up my learning and writing skills"
               gitLink="https://github.com/TheManishDaksh/muse"
@@ -155,12 +157,14 @@ export default function Home() {
               icons={muse}
             />
             <ProjectCard
+            key={5}
               title="Paytm"
               content="This is a ongoing projetc of making a pautm like application"
               gitLink="https://github.com/TheManishDaksh/paytm"
               icons={paytm}
             />
             <ProjectCard
+            key={6}
               title="TravelO"
               content="A travel website in which ypu can select destination for vacation and hotels"
               gitLink="https://github.com/TheManishDaksh/travel_fe"
@@ -169,7 +173,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Stack Section */}
           <div>
             <div className="text-2xl font-bold py-5">Stack</div>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-y-3">
@@ -190,14 +193,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Closing Statement */}
           <div className="text-start py-10">
             My Strength is building core web applications which solve problems
-            and scalable. I'm currently working with full Stack Development.
+            and scalable. I am currently working with full Stack Development.
             feel free for contacting me for any work or project.
           </div>
 
-          {/* Connect Section */}
           <div>
             <div className="text-2xl font-bold py-5">Connect</div>
             <div className="flex flex-col gap-5">
