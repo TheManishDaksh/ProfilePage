@@ -22,42 +22,42 @@ import Image from "next/image";
 
 export default function Home() {
   const paytm = [
-    <Next/>,
-    <TailwindIcon />,
-    <Express />,
-    <PrismaIcon/>,
-    <PostgresIcon/>
+    <Next key="next"/>,
+    <TailwindIcon key="tailwind"/>,
+    <Express key="express"/>,
+    <PrismaIcon key="prisma"/>,
+    <PostgresIcon key="postgres"/>
   ];
   const Initiate = [
-    <React/>,
-    <TailwindIcon />,
-    <Express />,
+    <React key="React"/>,
+    <TailwindIcon key="Tailwind"/>,
+    <Express  key="express"/>,
   ];
   const brainly = [
-    <React/>,
-    <TailwindIcon />,
-    <Express />,
-    <MongoDBIcon/>
+    <React key="react"/>,
+    <TailwindIcon key="tailwind"/>,
+    <Express key="express"/>,
+    <MongoDBIcon key="mongo"/>
   ];
   const muse = [
-    <React/>,
-    <TailwindIcon />,
-    <HonoIcon />,
-    <PrismaIcon/>,
-    <PostgresIcon/>
+    <React key="react"/>,
+    <TailwindIcon key="tailwind"/>,
+    <HonoIcon key="hono"/>,
+    <PrismaIcon key="prisma"/>,
+    <PostgresIcon key="postgres"/>
   ];
   const vercel = [
-    <React/>,
-    <TailwindIcon />,
-    <Express />,
-    <Cloudflare/>,
+    <React key="react"/>,
+    <TailwindIcon key="tailwind"/>,
+    <Express key="express"/>,
+    <Cloudflare key="clodfare"/>,
   ];
   const travel = [
-    <React/>,
-    <TailwindIcon />,
-    <Express />,
-    <MongoDBIcon/>,
-    <Nodejs/>
+    <React key="react"/>,
+    <TailwindIcon key="tailwind"/>,
+    <Express key="express"/>,
+    <MongoDBIcon key="mongo"/>,
+    <Nodejs key="node"/>
   ];
   return (
     <div className="flex flex-col md:flex-row items-center md:items-start justify-center w-full px-4 md:px-10 py-10 gap-10 bg-gradient-to-br from-slate-500 via-slate-950 to-white min-h-screen">
@@ -204,7 +204,7 @@ export default function Home() {
 
           <div className="text-start py-10">
             My Strength is building core web applications which solve problems
-            and scalable. I'm currently working with full Stack Development.
+            and scalable. I am currently working with full Stack Development.
             feel free for contacting me for any work or project.
           </div>
 
