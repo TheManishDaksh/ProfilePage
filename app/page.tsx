@@ -146,7 +146,7 @@ export default function Home() {
             <ProjectCard
             key={2}
               title="Vercel"
-              content="A small form of vercel for understanding the basic structure and flow of vecel"
+              content="A small form of vercel for understanding the basic structure and flow of vercel"
               gitLink="https://github.com/TheManishDaksh/vercel"
               icons={vercel}
             />
@@ -168,14 +168,14 @@ export default function Home() {
             <ProjectCard
             key={5}
               title="Paytm"
-              content="This is a ongoing projetc of making a pautm like application"
+              content="This is a ongoing project of making a paytm like application"
               gitLink="https://github.com/TheManishDaksh/paytm"
               icons={paytm}
             />
             <ProjectCard
             key={6}
               title="TravelO"
-              content="A travel website in which ypu can select destination for vacation and hotels"
+              content="A travel website in which you can select destination for vacation and hotels"
               gitLink="https://github.com/TheManishDaksh/travel_fe"
               liveLink="https://mahi-travels.vercel.app/"
               icons={travel}
@@ -204,7 +204,7 @@ export default function Home() {
 
           <div className="text-start py-10">
             My Strength is building core web applications which solve problems
-            and scalable. I am currently working with full Stack Development.
+            and are scalable. I am currently working with full Stack Development.
             feel free for contacting me for any work or project.
           </div>
 
